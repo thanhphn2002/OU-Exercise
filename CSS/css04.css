@@ -1,0 +1,27 @@
+html{
+  border: none;
+}
+
+* {
+  border: 3px solid;
+  padding: 5px;
+}
+
+span, h1{
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+p:last-of-type{
+  border: 3px dashed blue !important;
+}
+
+p:last-of-type span{
+  border: 3px dashed red !important;
+  padding: 0px;
+}
+
+a, h3{
+  text-align: center;
+  border: none;
+  padding: 0px;
+}

@@ -1,0 +1,19 @@
+h2, p{
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+}
+
+th{
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(124, 122, 122);
+}
+
+tr:nth-of-type(odd){
+    background-color: rgba(158, 157, 157, 0.5);
+}

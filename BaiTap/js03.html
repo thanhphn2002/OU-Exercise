@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="../JS/js03.js"></script>
+    <title>Javascript 03</title>
+  </head>
+
+  <body>
+    <h1 style="text-transform: uppercase; text-align: center">
+      Chương trình giải phương trình bậc 2 <br />
+      <span style="text-transform: none"> ax <sup>2</sup> + bx + c = 0</span>
+    </h1>
+
+    <form action="#" onsubmit="xuly()"  onreset="del()">
+      <table
+        style="margin: auto; background-color: rgba(148, 255, 127, 0.5); font-weight: bolder"
+        border="3"
+        cellpadding="10px"
+        cellspacing="0"
+      >
+        <tr>
+          <td>Nhập a</td>
+          <td>
+            <input type="text" id="a" placeholder="a" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Nhập b</td>
+          <td>
+            <input type="text" id="b" placeholder="b" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Nhập c</td>
+          <td>
+            <input type="text" id="c" placeholder="c" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <button type="submit">Tính</button>
+            <span style="padding-left: 30px"></span>
+            <button type="reset">Xóa</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <p id="rs">KẾT QUẢ</p>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <h3 style="text-align: center;"><a href="javascript.html">Danh sách bài tập Javascript</a></h3>
+  </body>
+</html>

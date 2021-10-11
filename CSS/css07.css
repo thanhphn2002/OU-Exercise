@@ -1,0 +1,35 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    padding-right: 30px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.menu{
+    background-color: cyan;
+    color: blue;
+    font-weight: bolder;
+    padding: 5px;
+    text-align: center;
+}
+
+h3{
+    color: gray;
+}
+
+img{
+    float: right;
+}
+
+h2{
+    text-align: center;
+    font-size: 90%;
+}

@@ -1,0 +1,61 @@
+h1{
+    color: blue;
+}
+
+.logo{
+    color: yellow;
+    font-size: 30px;
+    text-shadow: hsla(0, 0%, 0%, 0.5) 5px 5px;
+}
+
+li:nth-child(6){
+    float: right;
+    margin-top: 10px;
+}
+
+li, a{
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.menu{
+    background-color: rgba(7, 84, 184, 0.8);
+    color: blue;
+    font-weight: bolder;
+}
+
+h2 a{
+    text-align: center !important;
+    font-size: 80%;
+    color: blue !important;
+}
+
+button{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: blue;
+}
+
+span{
+    color: rgb(12, 185, 12);
+    font-size: larger;
+}
+
+span:hover{
+    color: blue;
+    font-size: larger;
+}

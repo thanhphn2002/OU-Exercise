@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../JS/js04.js"></script>
+    <title>Javascript 04</title>
+</head>
+
+<body style="font-weight: bolder;">
+    <form action="#" onreset="del()">  
+        <table border="3px" cellpadding = "10px" cellspacing = "0px" align="center" style="background-color: rgba(0, 255, 255, 0.3);">     
+            <th colspan="2" align="center">CÁC PHÉP TÍNH TOÁN HỌC</th>   
+            <tr>     
+                <td>
+                    <label>Số thứ 1</label>                
+                </td>
+                <td>
+                    <input type="text" id="x" placeholder="x" value="1" required>
+                </td>
+            </tr>
+
+            <tr>     
+                <td>
+                    <label>Số thứ 2</label>                
+                </td>
+                <td>
+                    <input type="text" id="y" placeholder="y" value="1" required>
+                </td>
+            </tr>
+
+            <tr>     
+                <td>
+                    <label>Phép tính</label>                
+                </td>
+                <td>
+                        <input type="radio" name="cal" value="1" checked>
+                        <label>Cộng</label>                                                             
+                        <input type="radio" name="cal" value="2">
+                        <label>Trừ</label>
+                        <br>
+                        <input type="radio" name="cal" value="3">
+                        <label>Nhân</label>                                                             
+                        <input type="radio" name="cal" value="4">
+                        <label>Chia</label>
+                </td>
+            </tr>
+            
+            <tr align="center">     
+                <td colspan="2">
+                    <button type="button" onclick="xuly(document.getElementById('x').value, document.getElementById('y').value)">Tính</button>     
+                    <span style="padding-left: 40px;"></span>
+                    <button type="reset">Reset</button>             
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                  <p id="rs">KẾT QUẢ</p>
+                </td>
+              </tr>
+        </table>
+    </form>
+    <h3 style="text-align: center;"><a href="javascript.html">Danh sách bài tập Javascript</a></h3>
+</body>
+</html>

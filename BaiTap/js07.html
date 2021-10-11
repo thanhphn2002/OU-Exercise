@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../JS/js07.js"></script>
+    <title>Javascript 07</title>
+</head>
+
+<body style="font-weight: bolder;">
+    <form action="#" onreset="del()">  
+        <table border="3px" cellpadding = "10px" cellspacing = "0px" align="center" style="width: 25%; background-color: rgba(0, 255, 255, 0.3);">     
+            <th colspan="2" align="center">ĐĂNG KÝ THÀNH VIÊN</th>   
+            <tr>     
+                <td>
+                    <label>Tên đăng nhập</label>                
+                </td>
+                <td>
+                    <input type="text" id="user" placeholder="Nhập tên" required>
+                </td>
+            </tr>
+
+            <tr>     
+                <td>
+                    <label>Mật khẩu</label>                
+                </td>
+                <td>
+                    <input type="password" id="pwd" required>
+                </td>
+            </tr>
+
+            <tr>     
+                <td>
+                    <label>Ngày sinh</label>                
+                </td>
+                <td>
+                    <input type="date" id="dob" required>
+                </td>
+            </tr>
+
+            <tr>     
+                <td>
+                    <label>Giới tính</label>                
+                </td>
+                <td>
+                    <input type="radio" name="sex" value="0" checked> Nam
+                    <input type="radio" name="sex" value="1"> Nữ
+                </td>
+            </tr>
+         
+            <tr>     
+                <td>
+                    <label>Quan tâm</label>                
+                </td>
+                <td>
+                    <select id="care" onchange="like()">
+                        <optgroup label="Thể thao">
+                            <option value="Bóng đá">Bóng đá</option>
+                            <option value="Bóng rổ">Bóng rổ</option>
+                            <option value="Bóng chuyền">Bóng chuyền</option>
+                        </optgroup>
+
+                        <optgroup label="Môn học">
+                            <option value="Toán học">Toán học</option>
+                            <option value="Tin học">Tin học</option>
+                            <option value="Anh văn">Anh văn</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>     
+                <td>
+                    <button type="button" onclick="xuly()">
+                        Confirm
+                    </button>               
+                </td>
+
+                <td>
+                    <button type="reset">Reset</button>             
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                  <textarea style="width: 80%; height: 100px;" id="rs"></textarea>
+                </td>
+              </tr>
+        </table>
+    </form>
+    <h3 style="text-align: center;"><a href="javascript.html">Danh sách bài tập Javascript</a></h3>
+</body>
+</html>

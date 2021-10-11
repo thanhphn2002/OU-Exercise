@@ -1,0 +1,17 @@
+body{
+    padding: 100px;
+}
+
+.row{
+    border: 2px blue solid;
+}
+
+.row div{
+    padding: 20px;
+    background-color: rgba(120, 135, 199, 0.5);
+    border: 2px blue solid;
+}
+
+h3{
+    text-align: center;
+}
