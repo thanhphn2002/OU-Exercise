@@ -2,11 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="../JS/js01.js"></script>
-    <title>Javascript 01</title>
+    <script type="text/javascript" src="../JS/js13.js"></script>
+    <title>Javascript 13</title>
 </head>
 
+<style>
+ 
+    label{
+        line-height: 30px;
+    }
+</style>
+
 <body>
+    <h1 id="h-styled">Thay đổi Style</h1>
+    <input type="radio" name="picked" onchange="xuly(this)" value="0" checked> 
+    <label>Mặc định</label> <br>
+    <input type="radio" name="picked" onchange="xuly(this)" value="1"> 
+    <label>Áp dụng Style</label> <br>
+
+    <div id="styled" style="padding: 5px;">
+        <p>Click vào tùy chọn "Mặc định" chuyển về định dạng mặc định</p>
+        <p>Click vào tùy chọn "Áp dụng Style" để áp dụng Style định dạng</p>
+    </div>
+
     <h3 style="text-align: center;"><a href="javascript.html">Danh sách bài tập Javascript</a></h3>
 </body>
 </html>

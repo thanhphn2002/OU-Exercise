@@ -1,6 +1,9 @@
-function xuly()
+function back(x)
 {
-    var  = document.getElementById("").value;
-    var temp = document.getElementById("").value;
-    
+    x.src = "../Images/cafe.jpg";
+}
+
+function change(x)
+{
+    x.src = "../Images/leaf.jpg";
 }

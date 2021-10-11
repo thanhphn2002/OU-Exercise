@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="../JS/js01.js"></script>
-    <title>Javascript 01</title>
+    <script type="text/javascript" src="../JS/js12.js"></script>
+    <title>Javascript 12</title>
 </head>
 
+<style>
+    body{
+        text-align: center;
+    }
+    label{
+        line-height: 60px;
+    }
+
+    label:first-child{
+        margin: auto;
+        padding: 30px 110px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+</style>
+
 <body>
+    <label id="rs">Chọn màu của bạn!</label> <br>
+    <label>Nhập nội dung: </label>
+    <input type="text" id="inp"> <br>
+    <label>Màu nền</label>
+    <input type="color" id="bg"> <br>
+    <label>Màu chữ</label>
+    <input type="color" id="tx"> <br>
+    <button onclick="xuly()">Thực hiện</button>
+
     <h3 style="text-align: center;"><a href="javascript.html">Danh sách bài tập Javascript</a></h3>
 </body>
 </html>

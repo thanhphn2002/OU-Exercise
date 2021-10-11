@@ -1,0 +1,36 @@
+button{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 81, 152, 0.7);
+    width: 10%;
+    border-radius: 20px;
+    margin: 20px auto;
+    justify-content: center;
+    border: none;
+}
+
+button span {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgba(0, 81, 152);
+    width: 10%;
+}
+
+button:hover span {
+    opacity: 1;
+    bottom: 0;
+}
+
+a{
+    line-height: 30px;
+    text-decoration: none;
+}
+
+span{
+    color: red; 
+    font-size: 20px;
+}
