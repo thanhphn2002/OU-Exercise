@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Jquery 03</title>
+
+    <script>
+        $(function()
+        {
+            $("#change").click(function()
+            {
+                $("tr:odd").css("background", "gold");
+            })
+
+            $("#defau").click(function()
+            {
+                $("tr:odd").css("background", "white");
+            })
+        })
+    </script>
+</head>
+
+<style>
+    h2{
+        text-transform: uppercase; 
+        text-align: center;
+    }
+
+    table{
+        display: flexbox; 
+        margin: auto;
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    th{
+        border: 1px greenyellow solid;
+        background-color: rgba(175, 238, 238, 0.5);
+        width: 35%;
+    }
+
+    td{
+        border: 1px orange solid;
+    }
+</style>
+
+<body>
+    <h2>bảng giá vật tư</h2>
+    <table cellpadding = 5px cellspacing = 0px>
+        <tr align="center">
+            <th>Tên vật tư</th>
+            <th>Đơn vị tính</th>
+            <th>Đơn giá</th>
+        </tr>
+
+        <tr>
+            <td>Cát</td>
+            <td>Khối</td>
+            <td>77,000</td>
+        </tr>
+
+        <tr>
+            <td>Đá</td>
+            <td>Khối</td>
+            <td>90,000</td>
+        </tr>
+
+        <tr>
+            <td>Xi măng Hà Tiên loại 1</td>
+            <td>Bao</td>
+            <td>120,000</td>
+        </tr>
+
+        <tr>
+            <td>Xi măng Hà Tiên loại 2</td>
+            <td>Bao</td>
+            <td>100,000</td>
+        </tr>
+    </table>
+    <div>
+        <button type="button" id="change" style="margin-right: 10px">Đổi màu nền</button>
+        <button type="button" id="defau">Màu mặc định</button>
+    </div>
+    
+
+    <h3 style="text-align: center;"><a href="jquery.html">Danh sách bài tập Jquery</a></h3>
+</body>
+</html>

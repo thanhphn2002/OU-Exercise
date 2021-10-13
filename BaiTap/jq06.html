@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Jquery 06</title>
+
+    <script>
+        $(function()
+        {
+            $("#up").click(function()
+            {
+                $("div").animate({top: "-=70px"});
+            })
+
+            $("#down").click(function()
+            {
+                $("div").animate({top: "+=70px"});
+            })
+
+            $("#left").click(function()
+            {
+                $("div").animate({left: "-=70px"});
+            })
+
+            $("#right").click(function()
+            {
+                $("div").animate({left: "+=70px"});
+            })
+
+            $("#res").click(function()
+            {
+                $("div").animate({top: "0px"});
+                $("div").animate({left: "0px"});
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button type="button" id="up">Move Up</button>
+    <button type="button" id="down">Move Down</button>
+    <button type="button" id="left">Move Left</button>
+    <button type="button" id="right">Move Right</button>
+    <button type="button" id="res">Reset</button>
+    <div style="position: relative; background-color: red; width: 150px; height: 100px; border: solid; margin-top: 20px; z-index: -5;"></div>
+
+    <h3 style="text-align: center;"><a href="jquery.html">Danh sách bài tập Jquery</a></h3>
+</body>
+</html>

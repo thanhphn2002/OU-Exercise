@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Jquery 02</title>
+
+    <script>
+        $(function()
+        {
+            $("button").click(function()
+            {
+                var t1 = new Date(document.getElementById("time1").value);
+                var t2 = new Date(document.getElementById("time2").value);
+                var kq = t2 - t1;
+                    kq = kq/1000/60/60/24;
+                $("#rs").html("Số ngày là: " + kq);
+            })
+        })
+    </script>
+</head>
+
+<body style="display: inline-block;">
+    <h1>Tính số ngày giữa 2 thời điểm</h1>
+    <table cellspacing = "5px">
+        <tr>
+            <td>
+                Từ ngày:
+            </td>
+    
+            <td>
+                <input type="date" id="time1"><br>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                Đến ngày:
+            </td>
+    
+            <td>
+                <input type="date" id="time2"><br>
+            </td>
+        </tr>
+    </table>
+    <button type="button">Tính số ngày</button>
+
+    <div id="rs"></div>
+
+    <h3 style="text-align: center;"><a href="jquery.html">Danh sách bài tập Jquery</a></h3>
+</body>
+</html>

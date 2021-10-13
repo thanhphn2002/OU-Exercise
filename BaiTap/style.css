@@ -1,12 +1,10 @@
 button{
     display: block;
-    text-align: center;
     padding: 10px;
     background-color: rgba(0, 81, 152, 0.7);
     width: 10%;
     border-radius: 20px;
     margin: 20px auto;
-    justify-content: center;
     border: none;
 }
 

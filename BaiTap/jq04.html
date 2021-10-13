@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Jquery 04</title>
+
+    <script>
+        $(function()
+        {
+            $("#xanh").click(function()
+            {
+                var str = "Màu bạn chọn là Xanh dương: ";
+                var x = $("#xanh").css("background-color");
+                str += x;
+                document.getElementById("rs").style.color = "blue";
+                document.getElementById("rs").style.fontWeight = "800";
+                $("#rs").html(str);         
+            })
+
+            $("#do").click(function()
+            {
+                var str = "Màu bạn chọn là Đỏ: ";
+                var x = $("#do").css("background-color");
+                str += x;
+                document.getElementById("rs").style.color = "red";
+                document.getElementById("rs").style.fontWeight = "800";
+                $("#rs").html(str);         
+            })
+
+            $("#hong").click(function()
+            {
+                var str = "Màu bạn chọn là Hồng: ";
+                var x = $("#hong").css("background-color");
+                str += x;
+                document.getElementById("rs").style.color = "rgb(255, 0, 242)";
+                document.getElementById("rs").style.fontWeight = "800";
+                $("#hong").
+                $("#rs").html(str);          
+            })
+
+            $("#la").click(function()
+            {
+                var str = "Màu bạn chọn là Xanh lá: ";
+                var x = $("#la").css("background-color");
+                str += x;
+                document.getElementById("rs").style.color = "rgb(0, 255, 76)";
+                document.getElementById("rs").style.fontWeight = "800";
+                $("#rs").html(str);        
+            })
+        })
+    </script>
+</head>
+
+<style>
+    div{
+        display: inline-block;
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #xanh{
+        background-color: rgb(47, 0, 255);
+    }
+
+    #do{
+        background-color: rgb(255, 0, 0);
+    }
+
+    #hong{
+        background-color: rgb(255, 0, 242);
+    }
+
+    #la{
+        background-color: rgb(0, 255, 76);
+    }
+</style>
+
+<body>
+    <p>Click lên các hình vuông dưới đây:</p>
+    <div id="xanh"></div>
+    <div id="do"></div>
+    <div id="hong"></div>
+    <div id="la"></div>
+    <p id="rs"></p>
+
+    <h3 style="text-align: center;"><a href="jquery.html">Danh sách bài tập Jquery</a></h3>
+</body>
+</html>
