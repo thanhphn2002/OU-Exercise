@@ -8,12 +8,110 @@
     <script>
         $(function()
         {
-            $()
+            var save = 3;
+            $("#del").click(function()
+            {
+                if (save >= 0)
+                {
+                    $("li").eq(save).hide();
+                    save--;
+                }          
+            })
+
+            $("#res").click(function()
+            {
+                $("li").show();
+                save = 3;
+            })
+
+            
+            $("ol li").click(function()
+            {
+                var stt = $(this).attr("value");
+                var txt = $("ol li").eq(stt-1).text();
+                var shadow = $('input[type="radio"]:checked').val();
+                
+                $("#rs").css("color", $('input[type="color"]').val());
+                if(shadow == 1)
+                    $("#rs").css("text-shadow", "7px 5px 7px #000000");
+                else
+                    $("#rs").css("text-shadow", "none");
+                $("#rs").html(txt);
+
+                
+            })
         })
     </script>
 </head>
 
+<style>
+    #container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    form, #box{
+        background-color: lemonchiffon;  
+        width: 50%;
+    }
+
+    #box{
+        margin-left: 50px;
+        height: 320px;
+    }
+
+    #rs{
+        text-align: center;
+        font-size: 90px;
+    }
+
+    fieldset{
+        border: blue solid;
+    }
+
+    legend{
+        color: rgb(40, 180, 220);
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    li:nth-of-type(odd){
+        background-color: rgba(255, 109, 221, 0.5); 
+    }
+
+    li:nth-of-type(even){
+        background-color: rgba(132, 195, 253, 0.5); 
+    }
+</style>
+
 <body>
+    <div id="container">
+        <form>
+            <fieldset>
+                <legend>Chọn</legend>
+                <input type="radio" name="txt" value="0" checked> Chọn chữ thường <br>
+                <input type="radio" name="txt" value="1"> Chọn có bóng <br><br>
+                Chọn màu chữ <input type="color" id="clr">   <br><br>
+                <button id="del" type="button">Xóa phần tử cuối</button> 
+                <button id="res" type="button">Phục hồi</button> <br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Click vào 1 chuỗi</legend>
+                <ol>
+                    <li value="1">HTML</li>
+                    <li value="2">CSS</li>
+                    <li value="3">JAVASCRIPT</li>
+                    <li value="4">JQUERY</li>
+                </ol>
+            </fieldset> 
+        </form>
+    
+        <div id="box">
+            <p id="rs">HTML</p>
+        </div>
+    </div>
+    
     <h3 style="text-align: center;"><a href="jquery.html">Danh sách bài tập Jquery</a></h3>
 </body>
 </html>

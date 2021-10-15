@@ -8,12 +8,58 @@
     <script>
         $(function()
         {
-            $()
+            $("#box > div").mouseover(function()
+            {
+                var stt = $(this).attr("id");
+                $("#box > div").eq(stt).css({
+                    "font-size": "150px",
+                    "font-weight": "bold",
+                    width: "300px",
+                    color: "black",
+                    background: "linear-gradient(white, grey, lightgray)",
+                });
+            })
+
+            $("#box  > div").mouseout(function () 
+            {
+                $("#box > div").css({
+                    "font-size": "70px",
+                    "font-weight": "normal",
+                    width: "150px",
+                    color: "white",
+                    background: "grey",
+                });
+            });
         })
     </script>
 </head>
 
+<style>
+    #box{
+        display: flex;
+        justify-content: center;
+    }
+
+    #box div{
+        width: 150px;
+        height: 150px;
+        color: white;
+        background-color: grey;
+        font-size: 70px;
+        text-align: center;
+        line-height: 140px;
+        border: 1px rgba(99, 93, 93, 0.534) solid;
+    }
+</style>
+
 <body>
+    <div id="box">
+        <div id="0">1</div>
+        <div id="1">2</div>
+        <div id="2">3</div>
+        <div id="3">4</div>
+        <div id="4">5</div>
+    </div>
     <h3 style="text-align: center;"><a href="jquery.html">Danh sách bài tập Jquery</a></h3>
 </body>
 </html>

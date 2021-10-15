@@ -3,7 +3,7 @@ function xuly(x, y)
     let kq = document.getElementById("rs");
     let box = document.getElementsByName("cal");
 
-    for (var i = 0; i < box.length; i++){
+    for (let i = 0; i < box.length; i++){
         if (box[i].checked === true){
             var cal = box[i].value;
         }
